@@ -1,0 +1,67 @@
+<html>
+    
+    <head>
+    <title>Dream html</title>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="img1" src="img/alarm.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="img2" src="img/bubble.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="img3" src="img/bear.png" height="220" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img4" src="img/owl.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="img5" src="img/star.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="img6" src="img/landscape.png" height="200" width="230"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img7" src="img/tea.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="img8" src="img/moon.png" height="200" width="240"/></div>
+            <div class="image-container"><img id="img9" src="img/bed.png" height="200" width="200"/></div>
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/alarm.mp3");
+            var sound2 = new buzz.sound("sound/thought.mp3");
+            var sound3 = new buzz.sound("sound/nursery.mp3");
+            var sound4 = new buzz.sound("sound/hooting.mp3");
+            var sound5 = new buzz.sound("sound/twinkle.mp3");
+            var sound6 = new buzz.sound("sound/chirping.mp3");
+            var sound7 = new buzz.sound("sound/kettle.mp3");
+            var sound8 = new buzz.sound("sound/howling.mp3");
+            var sound9 = new buzz.sound("sound/rustling.mp3");
+     
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('mouseover', function () {sound1.play(); });  
+                document.getElementById('img2').addEventListener('mouseover', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('mouseover', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('mouseover', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('mouseover', function () {sound5.play(); }); 
+                document.getElementById('img6').addEventListener('mouseover', function () {sound6.play(); }); 
+                document.getElementById('img7').addEventListener('mouseover', function () {sound7.play(); }); 
+                document.getElementById('img8').addEventListener('mouseover', function () {sound8.play(); }); 
+                document.getElementById('img9').addEventListener('mouseover', function () {sound9.play(); });
+            }  
+        </script>   
+        
+    </body>
+    
+</html>
